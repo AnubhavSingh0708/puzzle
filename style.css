@@ -1,0 +1,25 @@
+body{
+    background:linear-gradient(45deg,rgb(255, 51, 0),rgb(255, 132, 0),rgb(255, 255, 0));
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    text-align: center;
+    font-family: 'Goldman', cursive;
+    color: rgb(107, 0, 178);
+    text-shadow: 1px 2.5px 2px #ff4000;
+}
+h1{
+    font-family: 'Goldman', cursive;
+font-size: xxx-large;
+width: 99vw;
+text-align: center;
+text-shadow: 2px 5px 5px #ff4000;
+}
+#play{
+padding: 10px;
+font-family: 'Goldman', cursive;
+    background-color: rgb(107, 0, 178);
+    color:white;
+    font-size: xx-large;
+ border-radius:30px ;
+ box-shadow: 4px 4px 5px #ff4000,4px 4px 5px #f000ff inset;
+}
