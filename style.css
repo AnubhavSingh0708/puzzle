@@ -6,6 +6,7 @@ body{
     font-family: 'Goldman', cursive;
     color: rgb(107, 0, 178);
     text-shadow: 1px 2.5px 2px #ff4000;
+    background-attachment: fixed;
 }
 h1{
     font-family: 'Goldman', cursive;
