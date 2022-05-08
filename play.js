@@ -12,15 +12,19 @@ var c = document.getElementById("gCanvas");
 var ctx = c.getContext("2d");
 var w = c.width;
 var h = c.height;
-var a1=[1,1];
-var a2=[w/3,1];
-var a3=[w*2/3,1];
-var b1=[1,h/3];
-var b2=[w/3,h/3];
-var b3=[w*2/3,h/3];
-var c1=[1,h*2/3];
-var c2=[w/3,h*2/3];
-var c3=[w*2/3,h*2/3];
+var a1=[1,1,true];//[xstart,Ystart,occupied]
+var a2=[w/3,1,true];
+var a3=[w*2/3,1,true];
+var b1=[1,h/3,true];
+var b2=[w/3,h/3,true];
+var b3=[w*2/3,h/3,true];
+var c1=[1,h*2/3,true];
+var c2=[w/3,h*2/3,true];
+var c3=[w*2/3,h*2/3,false];
+var movement=[""+""];//[origin,destination]
+var cRect;
+var canvasX;
+var canvasY;
 ctx.font = "30px Arial";
 ctx.strokeText(ranNums[0], a1[0]+40, a1[1]+40); 
 
@@ -38,6 +42,18 @@ ctx.strokeText(ranNums[6], c1[0]+40, c1[1]+40);
 
 ctx.strokeText(ranNums[7], c2[0]+40, c2[1]+40); 
 
-c.addEventListener("click",function() {
 
-},false)
+c.addEventListener('mousedown', function(e) { 
+    cRect = c.getBoundingClientRect();       
+     canvasX = Math.round(e.clientX - cRect.left);  
+     canvasY = Math.round(e.clientY - cRect.top);  
+  if (canvasX<1){
+      
+  }
+});
+c.addEventListener('mouseup', function(f) { 
+     cRect = c.getBoundingClientRect();        
+     canvasX = Math.round(f.clientX - cRect.left);  
+     canvasY = Math.round(f.clientY - cRect.top);   
+ 
+});
